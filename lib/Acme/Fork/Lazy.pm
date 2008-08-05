@@ -112,8 +112,7 @@ The original, by Audrey Tang
 
 =item L<Data::Thunk>
 
-An ambitious and complex implementation by Nothingmuch.  Sadly, doesn't work for this module
-in its current incarnation.
+An ambitious and complex implementation by Nothingmuch.
 
 =item L<Scalar::Lazy>
 
@@ -143,13 +142,13 @@ This module is distributed under the same conditions as Perl itself.
 
 =cut
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 use IO::Pipe;
 use YAML;
-# use Data::Thunk;  # doesn't get autoforced
-# use Scalar::Lazy; # works ok for simple example.  
-use Scalar::Defer;  # works ok for simple example
+# use Data::Thunk;
+# use Scalar::Lazy;
+use Scalar::Defer;
 # all need a kludge for reference example
 
 use base 'Exporter';

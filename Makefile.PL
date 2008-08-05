@@ -13,4 +13,6 @@ requires   'Scalar::Defer';
 recommends 'Scalar::Lazy'; 
 recommends 'Data::Thunk'; 
 
+test_requires 'Test::More';
+
 WriteAll;
