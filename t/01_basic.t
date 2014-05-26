@@ -1,11 +1,6 @@
-#!/usr/bin/perl
 use strict; use warnings;
-
-use Test::More tests => 6;
-
-BEGIN {
-    use_ok( 'Acme::Fork::Lazy' => qw/:all/ ) ;
-}
+use Test::More;
+use Acme::Fork::Lazy ':all';
 
 # SCALAR CALC
 my $foo = forked { 2+3 };
@@ -30,6 +25,6 @@ TODO: {
 }
 is_deeply( [@$complex], [1,2], "Complex value is correct, if manually forced" );
 
-END {
-    wait_kids; # in case of zombies
-}
+wait_kids; # in case of zombies
+
+done_testing;

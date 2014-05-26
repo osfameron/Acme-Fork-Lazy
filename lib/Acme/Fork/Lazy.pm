@@ -142,7 +142,7 @@ This module is distributed under the same conditions as Perl itself.
 
 =cut
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 use IO::Pipe;
 use YAML;
